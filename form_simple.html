@@ -29,6 +29,12 @@
         text-align: center;
         color:#fff;
     }
+    #user {
+        background-color: #d2f6d6;
+        width:500px;
+        text-align: left;
+        color:#356bfa;
+    }
     div {
         margin:20px;
         border: 10px solid #d4fcfd;
@@ -58,7 +64,34 @@
         <input class="left" type="checkbox" name="travel" value="Du lịch">
         <label class="checkbox">Du lịch</label><br><br>
         <input type="button" name="sendInfo" value="Gửi thông tin">
-        <input type="submit" name= value="Nhập lại">
+        <input type="submit" value="Nhập lại">
+    </form>
+</div>
+
+<div style="background-color: #fdf4a9">
+    <h1 id="user">Đăng ký học viên</h1>
+    <form action="form_simple.html" method="post">
+        <label for="fname">Họ và tên</label>
+        <input type="text" name="fullname" id="fname"> <br><br>
+        <label for="dob">Ngày sinh</label>
+        <input type="dob" name="dob" id="dob" size="15"><br><br>
+        <label>Giới tính</label>
+        <input type="radio" name="gender" value="male">Nam
+        <input type="radio" name="gender" value="female">Nữ<br><br>
+        <label for="address">Địa chỉ</label>
+        <textarea name="" id="address" cols="20" rows="3"></textarea><br><br>
+        <label for="class">Lớp</label>
+        <select name="" id="class">
+            <option value="choose">Chọn lớp</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+        </select><br><br>
+        <label for="mail">Email</label>
+        <input type="email" name="email" id="mail"><br><br>
+        <label for="phone">Điện thoại</label>
+        <input type="phone" name="phone" id="phone"><br><br>
+        <input type="button" name="sendInfo" value="Đăng ký">
+        <input type="submit"  value="Nhập lại">
     </form>
 </div>
 </body>
