@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tạo bảng đơn giản</title>
+</head>
+<body>
+<style>
+    form {
+        width:500px;
+    }
+    .left {
+        margin-left:88px;
+    }
+    form label {
+        width: 80px;
+        display:inline-block;
+        color:blue;
+    }
+    .checkbox{
+        color: red;
+    }
+    h1 {
+        background-color: red;
+        width:500px;
+        text-align: center;
+        color:#fff;
+    }
+    div {
+        margin:20px;
+        border: 10px solid #d4fcfd;
+        width:500px;
+    }
+</style>
+<div>
+    <h1>Sở thích của bạn</h1>
+    <form action="form_simple.html" method="post">
+        <label for="fullname">Họ và tên</label>
+        <input type="text" name="fullname" id="fullname"> <br><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"><br><br>
+        <label>Sở thích</label>
+        <input type="checkbox" name="sport" value="Thể thao">
+        <label class="checkbox">Âm nhạc</label>
+        <input type="checkbox" name="music" value="Âm nhạc">
+        <label class="checkbox">Âm nhạc</label>
+        <input type="checkbox" name="reading" value="Đọc sách">
+        <label class="checkbox">Đọc sách</label> <br>
+        <input class="left" type="checkbox" name="web" value="Lướt web">
+        <label class="checkbox">Lướt web</label>
+        <input type="checkbox" name="game" value="Chơi game">
+        <label class="checkbox">Chơi game</label>
+        <input type="checkbox" name="film" value="Điện ảnh">
+        <label class="checkbox">Điện ảnh</label> <br>
+        <input class="left" type="checkbox" name="travel" value="Du lịch">
+        <label class="checkbox">Du lịch</label><br><br>
+        <input type="button" name="sendInfo" value="Gửi thông tin">
+        <input type="submit" name= value="Nhập lại">
+    </form>
+</div>
+</body>
+</html>
