@@ -8,6 +8,38 @@
     <title>Tạo form cơ bản</title>
 </head>
 <body>
+    <style>
+        . {
+            font-family: Lucida Grande;
+        }
+    </style>
+
+    <h1>Order form</h1>
+    <form action="form_basic.html" method="get">
+        <label for="">What would you like to buy?</label><br><br>
+        <select name="order" id="">
+            <option value="a">A</option>
+            <option value="b">B</option>
+            <option value="c">C</option>
+            <option value="d">D</option>
+        </select><br><br>
+        <label for="">How many would you like to order?</label><br><br>
+        <input type="radio" name="mount" value="1 - $10">1 - $10 <br>
+        <input type="radio" name="mount" value="2 - $20">2 - $20 <br>
+        <input type="radio" name="mount" value="3 - $25">3 - $25 <br><br>
+        <label for="">Name</label><br><br>
+        <input type="text" name="fname" value="Firstname" size="15">
+        <input type="text" name="lname" value="Lastname" size="15"><br><br>
+        <label for="email">Email</label><br><br>
+        <input type="email" name="email" id="email" size="35"><br><br>
+        <label for="">Phone Number</label><br><br>
+        <input type="text" name="phone1" size="5"> -
+        <input type="text" name="phone2" size="5"> -
+        <input type="text" name="phone3" size="5"><br><br>
+        <input type="submit" value="submit">
+
+
+    </form>
 
 </body>
 </html>
